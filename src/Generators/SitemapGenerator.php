@@ -6,7 +6,7 @@ use Page;
 use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\ErrorPage\ErrorPage;
-use SilverStripe\ORM\Arraylist;
+use SilverStripe\Model\List\ArrayList;
 use SilverStripe\ORM\DataList;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Subsites\Model\SubSite;
