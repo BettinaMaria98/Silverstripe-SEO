@@ -9,7 +9,7 @@ use SilverStripe\Control\Director;
 use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\ErrorPage\ErrorPage;
-use SilverStripe\ORM\ArrayList;
+use SilverStripe\Model\List\ArrayList;
 use SilverStripe\Subsites\Model\Subsite;
 
 /**
