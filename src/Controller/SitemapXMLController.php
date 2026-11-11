@@ -60,7 +60,7 @@ class SitemapXMLController extends Controller
      **/
     public function getSitemapHost()
     {
-        return substr(Director::absoluteBaseUrl(), 0, -1);
+        return rtrim(Director::absoluteBaseURL(), '/');
     }
 
     /**
@@ -95,7 +95,7 @@ class SitemapXMLController extends Controller
         if(!empty($objects)) {
             foreach($objects as $name => $values) {
                 foreach($name::get()->filter($this->getSitemapFilters()) as $page) {
-                        $pages->push($page);
+                    $pages->push($page);
                 }
             }
         }

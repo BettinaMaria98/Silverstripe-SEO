@@ -108,11 +108,11 @@ class SeoPageExtension extends Extension
         'HeadTags'      => SeoHeadTag::class,
         'SitemapImages' => Image::class
     ];
-    
+
     private static $owns = [
         'SocialImage'
     ];
-    
+
 
     /**
      * Sitemap defaults
@@ -504,7 +504,7 @@ class SeoPageExtension extends Extension
      **/
     public function getPageURL()
     {
-        return Director::absoluteBaseURL().substr($this->owner->Link(), 1);
+        return Director::absoluteURL($this->owner->Link());
     }
 
     /**

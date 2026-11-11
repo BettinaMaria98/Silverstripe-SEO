@@ -40,7 +40,7 @@ class MetaPreviewField extends LiteralField
     public function __construct(DataObject $page)
     {
         $this->page = $page;
-        
+
         Requirements::javascript('cyber-duck/silverstripe-seo:assets/js/serp.js');
 
         parent::__construct('MetaPreviewField', $this->getMetaContent());
@@ -95,7 +95,7 @@ class MetaPreviewField extends LiteralField
      **/
     private function getPageMetaLink()
     {
-        return Director::absoluteBaseURL().substr($this->page->Link(), 1);
+        return Director::absoluteURL($this->page->Link());
     }
 
     /**
